@@ -858,7 +858,6 @@ footer{
   </div>
 </footer>
 
-<script src="assets/qrcode.js"></script>
 <script>
 (function(){
   "use strict";
@@ -898,25 +897,6 @@ footer{
     rvs.forEach(function(el){el.classList.add('on');});
   }
 
-  /* Encode the site URL without preview query parameters. */
-  function buildQR(){
-    if(location.protocol==='file:')return;
-    var url=location.origin+location.pathname;
-    var box=document.getElementById('qrBox');
-    if(typeof qrcode==='undefined')return;
-    try{
-      var qr=qrcode(0,'M');
-      qr.addData(url);
-      qr.make();
-      var img=qr.createImgTag(5,8);
-      box.innerHTML=img;
-      var im=box.querySelector('img');
-      if(im){im.alt='QR code for Aimc careers';}
-    }catch(err){
-      // Keep the static QR image as a fallback.
-    }
-  }
-  buildQR();
 })();
 </script>
 </body>

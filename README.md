@@ -21,5 +21,4 @@ The site is compatible with GitHub Pages and requires no build step. Publish the
 - `index.html` — complete page, styles, and interactions
 - `assets/logo-mark.png` — Aimc logo
 - `assets/poster.png` — recruitment poster
-- `assets/qr-code.png` — static QR fallback
-- `assets/qrcode.js` — client-side QR generator
+- `assets/qr-code.png` — QR code linking to the published careers website
