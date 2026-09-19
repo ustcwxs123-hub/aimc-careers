@@ -1,6 +1,6 @@
 # Aimc Careers
 
-Static careers website for the Professional English assignment.
+Static careers website for the Professional English assignment.专业英语作业
 
 ## Local preview
 
